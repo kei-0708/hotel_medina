@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.section-header {
+  text-align: center;
+}
+
+.section-header__title {
+  display: block;
+  font-size: rem(32);
+}
+
+.section-header__subtitle {
+  display: block;
+  font-size: rem(20);
+  font-weight: $bold;
+  font-family: $second-font-family;
+  text-transform: capitalize;
+  margin-top: rem(34);
+}

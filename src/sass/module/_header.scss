@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.header {
+  background-color: rgba($black, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: calc(94 / 375 * 100vw);
+  z-index: 1;
+}

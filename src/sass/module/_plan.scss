@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.plan {
+  margin-top: rem(80);
+}
+
+.plan__inner {
+  overflow: hidden;
+}
+
+.plan__wrap {
+  padding-top: rem(60);
+}
+
+.plan__lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.plan__item {
+  width: 100%;
+  background-color: $dark-blue;
+  color: $white;
+  border-radius: rem(8);
+  margin-left: rem(10);
+}
+
+.plan__image img {
+  aspect-ratio: 322/190;
+  object-fit: cover;
+  border-top-left-radius: rem(8);
+  border-top-right-radius: rem(8);
+}
+
+.plan__content {
+  padding: rem(19) rem(17) rem(50) rem(17);
+}
+
+.plan__title {
+  font-size: rem(16);
+  line-height: calc(27 / 16);
+}
+
+.plan__price {
+  font-size: rem(16);
+  line-height: calc(27 / 16);
+}

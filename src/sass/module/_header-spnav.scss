@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.header-spnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $black;
+  padding-top: rem(140);
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+}
+
+.header-spnav.active {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.header-spnav__lists {
+  text-align: center;
+}
+
+.header-spnav__item {
+  font-size: rem(24);
+  color: $white;
+}
+
+.header-spnav__item:nth-child(n + 2) {
+  margin-top: rem(20);
+}

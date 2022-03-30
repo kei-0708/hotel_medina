@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.features {
+  margin-top: rem(80);
+}
+
+.features__inner {
+}
+
+.features__lists {
+  margin-top: rem(60);
+}
+
+.features__item {
+}
+
+.features__item:nth-child(n + 2) {
+  margin-top: rem(62);
+}
+
+.features__image {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+}
+
+.features__image img {
+  aspect-ratio: 375/250;
+  object-fit: cover;
+}
+
+.features__content {
+  margin-top: rem(40);
+}
+
+.features__title {
+  font-size: rem(18);
+  line-height: 26/18;
+}
+
+.features__text {
+  margin-top: rem(50);
+  font-size: rem(16);
+  line-height: 26/16;
+}
+
+.features__btn {
+  margin-top: rem(60);
+  text-align: center;
+}
