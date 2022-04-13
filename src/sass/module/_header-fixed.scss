@@ -6,23 +6,36 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 rem(20);
+  @include mq(){
+    padding: 0 rem(30);
+  }
 }
 
 .header-fixed__logo {
   width: rem(250);
   z-index: 2;
+  @include mq(){
+    width: rem(300);
+  }
 }
 
 // バーガーボタン
-.header-fixed__btn {
-  width: rem(52);
-  height: rem(31);
+.header-fixed__btn{
+  width: rem(40);
+  @include mq(){
+    display: none;
+  }
+}
+
+.header-fixed__bar {
+  width: inherit;
+  height: rem(20);
   position: relative;
   padding: 0;
   z-index: 3;
 }
 
-.header-fixed__btn span {
+.header-fixed__bar span {
   position: absolute;
   width: 100%;
   height: rem(3);
@@ -31,36 +44,49 @@
   transition: all 0.7s ease;
 }
 
-.header-fixed__btn span:first-child {
+.header-fixed__bar span:first-child {
   top: 0;
 }
 
-.header-fixed__btn span:nth-child(2) {
+.header-fixed__bar span:nth-child(2) {
   top: 0;
   bottom: 0;
   margin: auto;
+  opacity: 1;
 }
 
-.header-fixed__btn span:last-child {
+.header-fixed__bar span:nth-child(3) {
   bottom: 0;
 }
 
 // バーガーボタンが開いたとき
-.header-fixed__btn.open span {
+.header-fixed__bar.open span {
   top: 0;
   bottom: 0;
   margin: auto;
-  transition: all 0.7s ease;
+  transition: all 0.8s ease;
 }
 
-.header-fixed__btn.open span:first-child {
+.header-fixed__bar.open span:first-child {
   transform: rotate(135deg);
 }
 
-.header-fixed__btn.open span:nth-child(2) {
+.header-fixed__bar.open span:nth-child(2) {
   transform: rotate(135deg);
+  opacity: 0;
 }
 
-.header-fixed__btn.open span:last-child {
-  transform: rotate(-135deg);
+.header-fixed__bar.open span:nth-child(3) {
+  transform: rotate(225deg);
+}
+
+.header-fixed__menu{
+  font-size: rem(13);
+  font-family: $second-font-family;
+  font-weight: $bold;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: rem(5);
+  position: relative;
+  z-index: 3;
 }

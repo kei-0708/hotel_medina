@@ -2,10 +2,32 @@
 
 .header-pcnav {
   display: none;
+  @include mq(){
+    display: block;
+    position: fixed;
+    top: 0;
+    right: rem(40);
+    height: inherit;
+  }
 }
 .header-pcnav__wrap {
+  height: inherit;
 }
 .header-pcnav__lists {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: inherit;
 }
 .header-pcnav__item {
+  height: inherit;
+  font-size: rem(18);
+  color: $white;
+  margin-left: rem(20);
+}
+
+.header-pcnav__item a{
+  display: inline-block;
+  height: inherit;
+  padding-top: rem(35);
 }

@@ -16,4 +16,7 @@
   font-family: $second-font-family;
   text-transform: capitalize;
   margin-top: rem(34);
+  @include mq(){
+    margin-top: rem(40);
+  }
 }

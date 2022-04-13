@@ -1,0 +1,177 @@
+@use "global" as *;
+
+.faq{
+  margin-top: rem(40);
+  padding-top: rem(40);
+  padding-bottom: rem(80);
+  background-color: rgba($dark-blue, 0.1);
+}
+
+.faq__lists {
+  margin-top: rem(60);
+  @include mq() {
+    margin-top: rem(60);
+  }
+}
+
+.faq__item {
+  background-color: $white;
+}
+
+.faq__item:nth-child(n + 2) {
+  margin-top: rem(20);
+  @include mq() {
+    margin-top: rem(20);
+  }
+}
+
+.faq__question-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq__question-info {
+  display: flex;
+  align-items: center;
+  padding: rem(15) rem(10);
+  @include mq() {
+    padding: rem(20);
+  }
+}
+
+// Qマーク
+.faq__q {
+  width: rem(18);
+  height: rem(18);
+  border: 1px solid $dark-blue;
+  border-radius: 50%;
+  color: $dark-blue;
+  display: inline-block;
+  text-align: center;
+  padding-top: rem(1);
+  font-size: rem(10);
+  position: relative;
+  flex-shrink: 0;
+  @include mq() {
+    width: rem(40);
+    height: rem(40);
+    padding-top: rem(4);
+    font-size: rem(21);
+  }
+}
+
+.faq__question {
+  font-size: rem(16);
+  line-height: calc(21/14);
+  margin-left: rem(15);
+  @include mq() {
+    font-size: rem(24);
+    line-height: calc(40/30);
+    margin-left: rem(25);
+  }
+}
+
+// 矢印
+.faq__arrow {
+  display: inline-block;
+  position: relative;
+  height: rem(10);
+  width: rem(10);
+  margin-right: rem(8);
+  transform: rotateZ(0deg);
+  transition: all 0.7s;
+  @include mq() {
+    height: rem(20);
+    width: rem(20);
+    margin-right: rem(46);
+  }
+
+}
+// 開いたとき下を向く
+.faq__arrow.open {
+  transform: rotateZ(540deg);
+  transition: all 0.7s;
+}
+
+.faq__arrow::before {
+  /* 三角形 */
+  content: "";
+  border-top: 2px solid $dark-blue;
+  border-left: 2px solid $dark-blue;
+  border-radius: 1px;
+  display: inline-block;
+  height: rem(10);
+  width: rem(10);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%) rotate(45deg);
+  @include mq() {
+    height: rem(16);
+    width: rem(16);
+  }
+}
+
+.faq__arrow::after {
+  /* 縦棒 */
+  content: "";
+  border-top: 1px solid $dark-blue;
+  background-color: $dark-blue;
+  display: inline-block;
+  height: 1px;
+  width: rem(12);
+  position: absolute;
+  top: rem(7);
+  left: 50%;
+  transform: translatex(-50%) rotate(90deg);
+  @include mq() {
+    width: rem(20);
+    top: rem(8);
+  }
+}
+
+// 回答
+.faq__answer-wrap {
+  display: none;
+  padding: 0 rem(10) rem(15);
+  @include mq() {
+    padding: 0 rem(20) rem(20);
+  }
+}
+
+.faq__answer-body {
+  display: flex;
+}
+
+// Aマーク
+.faq__a {
+  height: rem(18);
+  width: rem(18);
+  border: 1px solid $blue;
+  border-radius: 50%;
+  color: $blue;
+  display: inline-block;
+  text-align: center;
+  padding-top: rem(1);
+  font-size: rem(10);
+  position: relative;
+  flex-shrink: 0;
+  @include mq() {
+    height: rem(40);
+    width: rem(40);
+    padding-top: rem(4);
+    font-size: rem(21);
+  }
+}
+
+.faq__answer {
+  font-size: rem(16);
+  line-height: calc(19/12);
+  margin-left: rem(15);
+  @include mq() {
+    font-size: rem(24);
+    line-height: calc(33/20);
+    margin-left: rem(25);
+  }
+}

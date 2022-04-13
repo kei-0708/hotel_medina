@@ -1,11 +1,17 @@
 @use "global" as *;
 
 .plan {
-  margin-top: rem(80);
+  margin-top: rem(40);
+  @include mq(){
+    margin-top: rem(80);
+  }
 }
 
 .plan__inner {
   overflow: hidden;
+  @include mq(){
+    overflow: visible;
+  }
 }
 
 .plan__wrap {
@@ -15,7 +21,12 @@
 .plan__lists {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  align-items: stretch;
+  @include mq(){
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+  }
 }
 
 .plan__item {
@@ -24,17 +35,29 @@
   color: $white;
   border-radius: rem(8);
   margin-left: rem(10);
+  display: flex;
+  flex-direction: column;
+  @include mq(){
+    margin-left: rem(27);
+  }
 }
 
 .plan__image img {
+  width: 100%;
   aspect-ratio: 322/190;
   object-fit: cover;
   border-top-left-radius: rem(8);
   border-top-right-radius: rem(8);
+  @include mq(){
+    aspect-ratio: 322/210;
+  }
 }
 
 .plan__content {
   padding: rem(19) rem(17) rem(50) rem(17);
+  @include mq(){
+    padding: rem(24) rem(25) rem(50) rem(25);
+  }
 }
 
 .plan__title {
@@ -45,4 +68,7 @@
 .plan__price {
   font-size: rem(16);
   line-height: calc(27 / 16);
+  @include mq(){
+    margin-top: rem(66);
+  }
 }
