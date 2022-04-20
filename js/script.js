@@ -44,6 +44,20 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   //   return false;
   // });
 
+
+  // ローディングアニメーション
+  $(function(){
+    var loader = $('.loading');
+    //ページの読み込みが完了したらアニメーションを非表示
+    $(window).on('load',function(){
+      loader.fadeOut();
+    });
+    //ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+    // setTimeout(function(){
+    //   loader.fadeOut();
+    // },3000);
+  });
+
   // ハンバーガーメニュー開閉
   $(function(){
     $('.js-header-fixed__bar').on('click',function(){
@@ -55,8 +69,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // カーテンアニメーション
   $(window).scroll(function () {
-
-    $('.js-features__image').each(function (){
+    $('.js-features__image, .js-card__figure, .article__image').each(function (){
       var imageOffset = $(this).offset().top;
       var scrollPoint = $(window).scrollTop();
       var windowHeight = $(window).height();
@@ -72,14 +85,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // おすすめプランのスライダー
   $('.js-plan__lists').slick({
     autoplay: true,
-    autoplaySpeed: 0,
-    speed: 6000,
-    // cssEase: "linear",
+    autoplaySpeed: 3000,
     swipe: true,
     dots: false,
     arrows: false,
     slidesToScroll: 1,
     slidesToShow: 4,
+    pauseOnHover: false,//マウスホバーで一時停止
     responsive: [{
       breakpoint: 768,
         settings: {

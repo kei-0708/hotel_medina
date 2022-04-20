@@ -1,4 +1,5 @@
 
+// 一文字ずつspanで囲う
 var textWrap1 = document.querySelectorAll('.js-top__title1');
 var textWrap2 = document.querySelectorAll('.js-top__title2');
   textWrap1.forEach((t) => (
@@ -8,6 +9,7 @@ var textWrap2 = document.querySelectorAll('.js-top__title2');
 	t.innerHTML = t.textContent.replace(/\S/g, '<span>$&</span>')
 ));
 
+// mvタイトル
 gsap.fromTo('.js-top__title1 > span', {
 	opacity:0,
 	scale: 0,
@@ -17,7 +19,7 @@ gsap.fromTo('.js-top__title1 > span', {
 	scale:1,
   rotateZ: '0',
 	stagger:0.1,
-  delay: 0.5
+  delay: 2.0
 });
 
 gsap.fromTo('.js-top__title2 > span', {
@@ -29,5 +31,5 @@ gsap.fromTo('.js-top__title2 > span', {
 	scale:1,
   rotateZ: '0',
 	stagger:0.2,
-  delay: 1.0
+  delay: 2.5
 });

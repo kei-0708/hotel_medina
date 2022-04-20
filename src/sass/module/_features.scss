@@ -9,9 +9,6 @@
   }
 }
 
-.features__inner {
-}
-
 .features__lists {
   margin-top: rem(60);
   @include mq(){
@@ -67,6 +64,7 @@
 .features__image.c-open:before{
   transform: translate3d(100%, 0, 0);
 }
+// カーテン
 
 .features__image img {
   width: 100%;
@@ -80,6 +78,7 @@
 
 .features__content {
   margin-top: rem(40);
+  padding: 0 rem(27);
   @include mq(){
     width: 50%;
     padding: rem(40);

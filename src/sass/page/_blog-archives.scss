@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.blog-archives{
+  margin-top: rem(80);
+  margin-bottom: rem(76);//仮
+}
+
+.blog-archives__lists{
+  margin-top: rem(50);
+}
+
+.blog-archives__item:nth-child(n+2){
+  margin-top: rem(30);
+  @include mq(){
+    margin-top: rem(50);
+  }
+}

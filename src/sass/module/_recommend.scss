@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.recommend__header{
+  background-color: $blue;
+  padding: rem(23);
+  color: $white;
+  font-size: rem(21);
+  text-align: center;
+}
+
+.recommend__lists{
+  margin-top: rem(30);
+}
+
+.recommend__item{
+  display: flex;
+  flex-direction: row;
+}
+
+.recommend__item:nth-child(n+2){
+  margin-top: rem(30);
+}
+
+.recommend__image{
+  width: rem(100);
+  flex-shrink: 0;
+}
+
+.recommend__title{
+  margin-left: rem(17);
+  font-size: rem(12);
+  line-height: calc(29/12);
+}

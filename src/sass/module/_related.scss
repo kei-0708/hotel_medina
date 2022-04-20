@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.related__header{
+  background-color: $blue;
+  padding: rem(23);
+  color: $white;
+  font-size: rem(21);
+  text-align: center;
+}
+
+.related__lists{
+  margin-top: rem(30);
+}
+
+.related__item{
+  display: flex;
+  flex-direction: row;
+}
+
+.related__item:nth-child(n+2){
+  margin-top: rem(30);
+}
+
+.related__image{
+  width: rem(100);
+  flex-shrink: 0;
+}
+
+.related__title{
+  margin-left: rem(17);
+  font-size: rem(12);
+  line-height: calc(29/12);
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>Hotel Medina</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ae7a692fdb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <!-- Loading Animation -->
+  <div class="loading">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+  </div>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-fixed">
+        <h1 class="header-fixed__logo">
+          <a href="/index.html">
+            <img src="./images/common/logo.png" alt="企業ロゴ">
+          </a>
+        </h1>
+        <div class="header-fixed__btn">
+          <button class="header-fixed__bar js-header-fixed__bar" type="button" aria-label="メニュー">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <p class="header-fixed__menu">menu</p>
+        </div>
+    </div>
+    <!-- sp版 -->
+    <div class="header-spnav nav">
+      <nav class="header-spnav__wrap">
+          <ul class="header-spnav__lists">
+              <li class="header-spnav__item"><a href="#">宿泊予約</a></li>
+              <li class="header-spnav__item"><a href="/blog.html">最新情報</a></li>
+              <li class="header-spnav__item"><a href="#">よくあるご質問</a></li>
+              <li class="header-spnav__item"><a href="#">お問い合わせ</a></li>
+          </ul>
+      </nav>
+    </div>
+    <!-- pc版 -->
+    <div class="header-pcnav nav">
+      <nav class="header-pcnav__wrap">
+          <ul class="header-pcnav__lists">
+              <li class="header-pcnav__item"><a href="#">宿泊予約</a></li>
+              <li class="header-pcnav__item"><a href="/blog.html">最新情報</a></li>
+              <li class="header-pcnav__item"><a href="#">よくあるご質問</a></li>
+              <li class="header-pcnav__item"><a href="#">お問い合わせ</a></li>
+          </ul>
+      </nav>
+    </div>
+    </header>
+
+  <main>
+
+    <!-- 個別記事 -->
+    <div class="article">
+      <div class="article__inner inner">
+        <div class="article__wrap">
+          <div class="article__category"><span>お知らせ</span></div> <!-- <span class="article__category"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; }?></span> -->
+          <p class="article__title">タイトルが入ります。タイトルが入ります。</p>
+
+          <div class="article__flex">
+            <div class="article__contents">
+              <div class="article__info">
+                <div class="article__sns-wrap">
+                  <span class="article__sns"><i class="fa-brands fa-twitter fa-lg fa-shake"></i>tweet</span>
+                </div>
+                <time class="article__date" datetime="">2022年04月12日更新</time> <!--<time class="article__date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y年m月d日');?></time> -->
+              </div>
+              <figure class="article__image">
+                <img src="/images/blog/AdobeStock_193751905.jpeg" alt="改修工事のお知らせ"> <!--<?php the_post_thumbnail('post-thumbnail', array('alt' => the_title_attribute('echo=0')));?>-->
+              </figure>
+              <!-- <?php the_content(); ?> -->
+              <h2 class="article__header1">見出し2（h2）</h2>
+              <p class="article__text1">テキストテキストテキストテキストテキ スト。テキストテキストテキストテキス ト。テキストテキストテキストテキスト テキストテキストテキストテキスト。 テキストテキストテキストテキストテキ ストテキストテキストテキストテキスト テキストテキストテキストテキストテキ スト</p>
+              <h2 class="article__header2">見出し3（h3）</h2>
+              <p class="article__text2">テキストテキストテキストテキストテキ スト。テキストテキストテキストテキス ト。テキストテキストテキストテキスト テキストテキストテキストテキスト。 テキストテキストテキストテキストテキ ストテキストテキストテキストテキスト テキストテキストテキストテキストテキ スト</p>
+              <h2 class="article__header2">見出し3（h3）</h2>
+              <p class="article__text2">テキストテキストテキストテキストテキ スト。テキストテキストテキストテキス ト。テキストテキストテキストテキスト テキストテキストテキストテキスト。 テキストテキストテキストテキストテキ ストテキストテキストテキストテキスト テキストテキストテキストテキストテキ スト</p>
+              <h2 class="article__header1">見出し2（h2）</h2>
+              <p class="article__text1">テキストテキストテキストテキストテキ スト。テキストテキストテキストテキス ト。テキストテキストテキストテキスト テキストテキストテキストテキスト。 テキストテキストテキストテキストテキ ストテキストテキストテキストテキスト テキストテキストテキストテキストテキ スト</p>
+            </div>
+
+
+            <div class="article__sidebar">
+              <!-- 関連記事 -->
+              <div class="article__related related">
+                <h3 class="related__header">関連記事</h3>
+                <div class="related__lists">
+                  <a href="#" class="related__item">
+                    <figure class="related__image">
+                      <img src="/images/blog/AdobeStock_193751905.jpeg" alt="">
+                    </figure>
+                    <p class="related__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+                  </a>
+                  <a href="#" class="related__item">
+                    <figure class="related__image">
+                      <img src="/images/blog/AdobeStock_193751905.jpeg" alt="">
+                    </figure>
+                    <p class="related__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+                  </a>
+                  <a href="#" class="related__item">
+                    <figure class="related__image">
+                      <img src="/images/blog/AdobeStock_193751905.jpeg" alt="">
+                    </figure>
+                    <p class="related__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+                  </a>
+                </div>
+              </div>
+              <!-- おすすめ記事 -->
+              <div class="article__recommend recommend">
+                <h3 class="recommend__header">おすすめ記事</h3>
+                <div class="recommend__lists">
+                  <a href="#" class="recommend__item">
+                    <figure class="recommend__image">
+                      <img src="/images/blog/AdobeStock_193751905.jpeg" alt="">
+                    </figure>
+                    <p class="recommend__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+                  </a>
+                  <a href="#" class="recommend__item">
+                    <figure class="recommend__image">
+                      <img src="/images/blog/AdobeStock_193751905.jpeg" alt="">
+                    </figure>
+                    <p class="recommend__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+                  </a>
+                  <a href="#" class="recommend__item">
+                    <figure class="recommend__image">
+                      <img src="/images/blog/AdobeStock_193751905.jpeg" alt="">
+                    </figure>
+                    <p class="recommend__title">タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <ul class="footer__lists">
+          <li class="footer__item">
+            <a href="#" >利用規約</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" >プライバシーポリシー</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" >個人商取引法に基づく表記</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" >お問い合せ</a>
+          </li>
+        </ul>
+        <figure class="footer__logo">
+          <a href="/index.html">
+            <img src="./images/common/logo.png" alt="フッターロゴ">
+          </a>
+        </figure>
+        <p class="footer__copyright">&copy;2021 Hotel Medina All Rights Reserved.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+  <script src="./js/gsap.js"></script>
+  <script defer src="./js/slick.min.js"></script>
+  <script defer src="./js/script.js"></script>
+
+</body>
+</html>
