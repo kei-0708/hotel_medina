@@ -406,6 +406,7 @@ select::-ms-expand {
 
 .faq__item {
   background-color: #fff;
+  cursor: pointer;
 }
 
 .faq__item:nth-child(n+2) {
@@ -1558,6 +1559,46 @@ select::-ms-expand {
   margin-top: 2.4375rem;
 }
 
+.subpage-top {
+  background-size: cover;
+  background-position: center;
+  height: 390px;
+  height: 24.375rem;
+  position: relative;
+}
+
+.subpage-top::before {
+  content: "";
+  background-color: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.subpage-top__title-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .subpage-top__title-wrap {
+    font-size: 3.125rem;
+  }
+}
+
+.subpage-top span {
+  display: inline-block;
+}
+
 .top {
   background-image: url(/images/common/top-mv_sp.jpg);
   background-size: cover;
@@ -1828,11 +1869,6 @@ select::-ms-expand {
 
 .blog-top {
   background-image: url(/images/blog/mv-sp.jpeg);
-  background-size: cover;
-  background-position: center;
-  height: 390px;
-  height: 24.375rem;
-  position: relative;
 }
 @media screen and (min-width: 768px) {
   .blog-top {
@@ -1840,35 +1876,134 @@ select::-ms-expand {
   }
 }
 
-.blog-top::before {
-  content: "";
-  background-color: rgba(0, 0, 0, .3);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.blog-top__title-wrap {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
-  text-align: center;
-  font-size: 35px;
-  text-transform: uppercase;
-  color: #fff;
-  width: 100%;
+.contact-form {
+  margin-top: 36px;
+  margin-top: 2.25rem;
+  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 @media screen and (min-width: 768px) {
-  .blog-top__title-wrap {
-    font-size: 3.125rem;
+  .contact-form {
+    margin-top: 1.75rem;
   }
 }
 
-.blog-top span {
+.contact-form__lists {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-form__lists {
+    max-width: 56.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact-form__item:nth-child(n+2) {
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+
+.contact-form__title {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.contact-form__box {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  padding: 19px 20px;
+  padding: 1.1875rem 1.25rem;
+  border: 1px solid #11315f;
+  font-size: 12px;
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.contact-form__textarea {
+  margin-top: 16px;
+  margin-top: 1rem;
+  padding: 19px;
+  padding: 1.1875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.6666666667;
+  border: 1px solid #11315f;
+  width: 100%;
+}
+
+.contact-form__privacy {
+  margin-top: 63px;
+  margin-top: 3.9375rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.6875;
+  text-align: center;
+}
+
+.contact-form__privacy a {
+  text-decoration: underline;
+}
+
+.contact-form__confirm {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  font-size: 16px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contact-form__confirm .checkbox {
   display: inline-block;
+  border: 2px solid #11315f;
+  border: 0.125rem solid #11315f;
+  width: 20px;
+  width: 1.25rem;
+  height: 20px;
+  height: 1.25rem;
+  text-align: center;
+  position: relative;
+  top: 5px;
+  top: 0.3125rem;
+}
+
+.contact-form__confirm .checkbox:checked::before {
+  content: "✓";
+  position: absolute;
+  display: inline-block;
+  top: -15px;
+  right: -7px;
+  font-size: 30px;
+}
+
+.contact-form__confirm label {
+  margin-left: 10px;
+  margin-left: 0.625rem;
+}
+
+.contact-form__btn-wrap {
+  margin-top: 46px;
+  margin-top: 2.875rem;
+  text-align: center;
+}
+
+.contact-form__btn {
+  padding: 0;
+}
+
+.contact-form__submit {
+  color: #fff;
+  padding: 12px 35px;
+  padding: 0.75rem 2.1875rem;
+}
+
+.contact-top {
+  background-image: url(/images/contact/mv-sp.jpeg);
+}
+@media screen and (min-width: 768px) {
+  .contact-top {
+    background-image: url(/images/contact/mv-pc.jpeg);
+  }
 }
 /*# sourceMappingURL=styles.css.map */

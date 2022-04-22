@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.subpage-top {
+  background-size: cover;
+  background-position: center;
+  height: rem(390);
+  position: relative;
+}
+
+.subpage-top::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.subpage-top__title-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: $white;
+  width: 100%;
+  @include mq() {
+    font-size: rem(50);
+  }
+}
+
+.subpage-top span{
+  display: inline-block;
+}

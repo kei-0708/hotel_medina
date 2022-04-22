@@ -16,6 +16,7 @@
 
 .faq__item {
   background-color: $white;
+  cursor: pointer;
 }
 
 .faq__item:nth-child(n + 2) {
