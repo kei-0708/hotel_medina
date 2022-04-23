@@ -1600,7 +1600,7 @@ select::-ms-expand {
 }
 
 .top {
-  background-image: url(/images/common/top-mv_sp.jpg);
+  background-image: url(../images/common/top-mv_sp.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -1608,7 +1608,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .top {
-    background-image: url(/images/common/top-bg.jpg);
+    background-image: url(../images/common/top-bg.jpg);
   }
 }
 
@@ -1868,11 +1868,11 @@ select::-ms-expand {
 }
 
 .blog-top {
-  background-image: url(/images/blog/mv-sp.jpeg);
+  background-image: url(../images/blog/mv-sp.jpeg);
 }
 @media screen and (min-width: 768px) {
   .blog-top {
-    background-image: url(/images/blog/mv-pc.jpeg);
+    background-image: url(../images/blog/mv-pc.jpeg);
   }
 }
 
@@ -1999,11 +1999,11 @@ select::-ms-expand {
 }
 
 .contact-top {
-  background-image: url(/images/contact/mv-sp.jpeg);
+  background-image: url(../images/contact/mv-sp.jpeg);
 }
 @media screen and (min-width: 768px) {
   .contact-top {
-    background-image: url(/images/contact/mv-pc.jpeg);
+    background-image: url(../images/contact/mv-pc.jpeg);
   }
 }
 /*# sourceMappingURL=styles.css.map */

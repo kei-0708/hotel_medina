@@ -1,80 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <!-- meta情報 -->
-  <title>Hotel Medina</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- css -->
-  <link rel="stylesheet" href="./css/slick-theme.css">
-  <link rel="stylesheet" href="./css/slick.css">
-  <link rel="stylesheet" href="./css/styles.css">
-
-</head>
-<body>
-
-  <!-- Loading Animation -->
-  <div class="loading">
-    <div class="sk-folding-cube">
-      <div class="sk-cube1 sk-cube"></div>
-      <div class="sk-cube2 sk-cube"></div>
-      <div class="sk-cube4 sk-cube"></div>
-      <div class="sk-cube3 sk-cube"></div>
-    </div>
-  </div>
-
-  <!-- ヘッダー -->
-  <header class="header">
-    <div class="header-fixed">
-        <h1 class="header-fixed__logo">
-          <a href="">
-            <img src="./images/common/logo.png" alt="企業ロゴ">
-          </a>
-        </h1>
-        <div class="header-fixed__btn">
-          <button class="header-fixed__bar js-header-fixed__bar" type="button" aria-label="メニュー">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <p class="header-fixed__menu">menu</p>
-        </div>
-    </div>
-    <!-- sp版 -->
-    <div class="header-spnav nav">
-        <nav class="header-spnav__wrap">
-            <ul class="header-spnav__lists">
-                <li class="header-spnav__item"><a href="#">宿泊予約</a></li>
-                <li class="header-spnav__item"><a href="/blog.html">最新情報</a></li>
-                <li class="header-spnav__item"><a href="#">よくあるご質問</a></li>
-                <li class="header-spnav__item"><a href="/contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- pc版 -->
-    <div class="header-pcnav nav">
-      <nav class="header-pcnav__wrap">
-          <ul class="header-pcnav__lists">
-              <li class="header-pcnav__item"><a href="#">宿泊予約</a></li>
-              <li class="header-pcnav__item"><a href="/blog.html">最新情報</a></li>
-              <li class="header-pcnav__item"><a href="#">よくあるご質問</a></li>
-              <li class="header-pcnav__item"><a href="/contact.html">お問い合わせ</a></li>
-          </ul>
-      </nav>
-  </div>
-  </header>
+<?php get_header(); ?>
 
   <main>
     <!-- トップ -->
@@ -95,7 +19,7 @@
         <ul class="features__lists">
           <li class="features__item">
             <figure class="features__image js-features__image">
-              <img src="/images/common/feature-item01.jpg" alt="特徴1">
+              <img src="<?php echo get_theme_file_uri("/images/common/feature-item01.jpg"); ?>" alt="特徴1">
             </figure>
             <div class="features__content">
               <h3 class="features__title">モロッコ伝統の邸宅ホテル<br class="u-desktop">「リアド」でラグジュアリーなひと時を。</h3>
@@ -107,7 +31,7 @@
           </li>
           <li class="features__item">
             <figure class="features__image js-features__image">
-              <img src="/images/common/feature-item02.jpg" alt="特徴1">
+              <img src="<?php echo get_theme_file_uri("/images/common/feature-item02.jpg"); ?>" alt="特徴1">
             </figure>
             <div class="features__content">
               <h3 class="features__title">土地ならではの味覚をみなさまに。<br class="u-desktop">本場モロッコ料理に舌鼓。</h3>
@@ -119,7 +43,7 @@
           </li>
           <li class="features__item">
             <figure class="features__image js-features__image">
-              <img src="/images/common/feature-item03.jpg" alt="特徴1">
+              <img src="<?php echo get_theme_file_uri("/images/common/feature-item03.jpg"); ?>" alt="特徴1">
             </figure>
             <div class="features__content">
               <h3 class="features__title">邸宅ホテルのゴージャス空間で<br class="u-desktop">リフレッシュを。</h3>
@@ -134,7 +58,7 @@
     </section>
 
     <!-- プラン -->
-    <section class="plan">
+    <section class="plan" id="plan">
       <div class="plan__inner inner">
         <div class="plan__header section-header">
           <h2 class="section-header__title">おすすめプラン</h2>
@@ -144,7 +68,7 @@
           <ul class="plan__lists js-plan__lists">
             <li class="plan__item">
               <figure class="plan__image">
-                <img src="/images/common/rec-plan01.jpg" alt="プラン1">
+                <img src="<?php echo get_theme_file_uri("/images/common/rec-plan01.jpg"); ?>" alt="プラン1">
               </figure>
               <div class="plan__content">
                 <h3 class="plan__title">リーズナブルなスタンダードプラン＜朝選択可＞</h3>
@@ -153,7 +77,7 @@
             </li>
             <li class="plan__item">
               <figure class="plan__image">
-                <img src="/images/common/rec-plan02.jpg" alt="プラン1">
+                <img src="<?php echo get_theme_file_uri("/images/common/rec-plan02.jpg"); ?>" alt="プラン1">
               </figure>
               <div class="plan__content">
                 <h3 class="plan__title">リアドでゆったり、ロングステイプラン＜朝食選択可＞</h3>
@@ -162,7 +86,7 @@
             </li>
             <li class="plan__item">
               <figure class="plan__image">
-                <img src="/images/common/rec-plan03.jpg" alt="プラン1">
+                <img src="<?php echo get_theme_file_uri("/images/common/rec-plan03.jpg"); ?>" alt="プラン1">
               </figure>
               <div class="plan__content">
                 <h3 class="plan__title">【2部屋限定】スイートルームプラン</h3>
@@ -171,7 +95,7 @@
             </li>
             <li class="plan__item">
               <figure class="plan__image">
-                <img src="/images/common/rec-plan04.jpg" alt="プラン1">
+                <img src="<?php echo get_theme_file_uri("/images/common/rec-plan04.jpg"); ?>" alt="プラン1">
               </figure>
               <div class="plan__content">
                 <h3 class="plan__title">【10組限定】屋上ラウンジでのディナープラン</h3>
@@ -180,7 +104,7 @@
             </li>
             <li class="plan__item">
               <figure class="plan__image">
-                <img src="/images/common/rec-plan05.jpg" alt="プラン1">
+                <img src="<?php echo get_theme_file_uri("/images/common/rec-plan05.jpg"); ?>" alt="プラン1">
               </figure>
               <div class="plan__content">
                 <h3 class="plan__title">【数量限定】ラム肉のステーキプラン</h3>
@@ -198,7 +122,7 @@
         <ul class="service__lists">
           <li class="service__item">
             <figure class="service__image">
-              <img src="/images/common/service-item01.png" alt="サービス1">
+              <img src="<?php echo get_theme_file_uri("/images/common/service-item01.png"); ?>" alt="サービス1">
             </figure>
             <div class="service__body">
               <h3 class="service__title">最低価格保証</h3>
@@ -207,7 +131,7 @@
           </li>
           <li class="service__item">
             <figure class="service__image">
-              <img src="/images/common/service-item02.png" alt="サービス1">
+              <img src="<?php echo get_theme_file_uri("/images/common/service-item02.png"); ?>" alt="サービス1">
             </figure>
             <div class="service__body">
               <h3 class="service__title">全客室Wi-Fi無料</h3>
@@ -216,7 +140,7 @@
           </li>
           <li class="service__item">
             <figure class="service__image">
-              <img src="/images/common/service-item03.png" alt="サービス1">
+              <img src="<?php echo get_theme_file_uri("/images/common/service-item03.png"); ?>" alt="サービス1">
             </figure>
             <div class="service__body">
               <h3 class="service__title">会員様限定料金</h3>
@@ -228,52 +152,45 @@
     </section>
 
     <!-- ブログ -->
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="blog__inner inner">
         <div class="blog__header section-header">
-          <h2 class="section-header__title">新着情報</h2>
+          <h2 class="section-header__title">ブログ</h2>
           <p class="section-header__subtitle">blog</p>
         </div>
-        <ul class="blog__lists">
-          <li class="blog__item">
-            <span class="blog__category">お知らせ</span>
-            <a href="#" class="blog__text">
-              <p>2022年2月より、Hotel Medina一部改装工事のため、部屋数を限定させて頂きます。</p>
-            </a>
-          </li>
-          <li class="blog__item">
-            <span class="blog__category">お知らせ</span>
-            <a href="#" class="blog__text">
-              <p>2021年12月20日、新型コロナウイルスへの感染対策規定を更新いたしました。</p>
-            </a>
-          </li>
-          <li class="blog__item">
-            <span class="blog__category">イベント</span>
-            <a href="#" class="blog__text">
-              <p>2021年12月31日、シャウエン発・サハラ砂漠への初詣ツアーを開催致します。</p>
-            </a>
-          </li>
-          <li class="blog__item">
-            <span class="blog__category">お知らせ</span>
-            <a href="#" class="blog__text">
-              <p>2021年12月01日、Hotel Medinaは開業70年を迎えました。</p>
-            </a>
-          </li>
-          <li class="blog__item">
-            <span class="blog__category">イベント</span>
-            <a href="#" class="blog__text">
-              <p>2021年12月01日～12月25日まで、クリスマスフェア開催中です！</p>
-            </a>
-          </li>
-        </ul>
+        <div class="blog__lists">
+
+          <?php $args = array(
+            'posts_per_page' => 3, //表示する記事の数
+            );
+            $customPosts = get_posts($args);
+            if($customPosts) : foreach($customPosts as $post) : setup_postdata( $post );
+          ?>
+          <a class="blog__item card" href="<?php the_permalink(); ?>">
+            <figure class="card__figure js-card__figure">
+              <?php the_post_thumbnail('post-thumbnail', array('alt' => the_title_attribute('echo=0'))); ?>
+              <span class="card__category"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></span>
+            </figure>
+            <div class="card__body">
+              <time class="card__date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+              <h3 class="card__title"><?php the_title(); ?></h3>
+              <p class="card__copy"><?php the_excerpt(); ?></p>
+            </div>
+          </a>
+          <?php endforeach; ?>
+          <?php else : //記事が無い場合 ?>
+          <p>このカテゴリーにはまだ記事がありません。</p>
+          <?php endif; wp_reset_postdata(); //クエリのリセット ?>
+
+        </div>
         <div class="blog__btn">
-          <a href="/blog.html" class="link-btn">記事一覧を見る</a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog" class="link-btn">記事一覧を見る</a>
         </div>
       </div>
     </section>
 
     <!-- よくある質問 -->
-    <section class="faq">
+    <section class="faq" id="faq">
       <div class="faq__inner inner">
         <div class="faq__header section-header">
           <h2 class="section-header__title">よくある質問</h2>
@@ -351,45 +268,6 @@
         </ul>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="footer__inner">
-        <ul class="footer__lists">
-          <li class="footer__item">
-            <a href="#" >利用規約</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" >プライバシーポリシー</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" >個人商取引法に基づく表記</a>
-          </li>
-          <li class="footer__item">
-            <a href="/contact.html" >お問い合せ</a>
-          </li>
-        </ul>
-        <figure class="footer__logo">
-          <a href="/index.html">
-            <img src="./images/common/logo.png" alt="フッターロゴ">
-          </a>
-        </figure>
-        <p class="footer__copyright">&copy;2021 Hotel Medina All Rights Reserved.</p>
-      </div>
-    </footer>
-
-
   </main>
 
-  <!-- JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
-  <script src="./js/gsap.js"></script>
-  <script defer src="./js/slick.min.js"></script>
-  <script defer src="./js/script.js"></script>
-
-</body>
-</html>
-
-
-
+  <?php get_footer(); ?>

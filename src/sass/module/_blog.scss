@@ -17,19 +17,19 @@
   }
 }
 
-.blog__item{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  @include mq(){
-    flex-direction: row;
-  }
-}
+// .blog__item{
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   @include mq(){
+//     flex-direction: row;
+//   }
+// }
 
 .blog__item:nth-child(n+2){
-  margin-top: rem(20);
+  margin-top: rem(30);
   @include mq(){
-    margin-top: rem(33);
+    margin-top: rem(50);
   }
 }
 
