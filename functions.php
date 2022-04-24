@@ -23,6 +23,7 @@
     wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.0.min.js', "", "1.0.1");
     wp_enqueue_script( 'gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js', "", "1.0.1");
     wp_enqueue_script( 'scrolltrigger', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js', "", "1.0.1");
+    wp_enqueue_script( 'fontawesome', '//kit.fontawesome.com/ae7a692fdb.js', "", "1.0.1");
     wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.1', true );
     wp_enqueue_script( 'gsap-js', get_template_directory_uri() . '/js/gsap.js', array( 'jquery' ), '1.0.1', true );
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/js/slick.min.js', array( 'jquery' ), '1.0.1', true );

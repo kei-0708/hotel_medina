@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.breadcrumb{
+  margin-top: rem(30);
+  font-size: rem(16);
+  @include mq(){
+    font-size: rem(20);
+  }
+}

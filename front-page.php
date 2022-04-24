@@ -152,13 +152,13 @@
     </section>
 
     <!-- ブログ -->
-    <section class="blog" id="blog">
-      <div class="blog__inner inner">
-        <div class="blog__header section-header">
+    <section class="blogs" id="blog">
+      <div class="blogs__inner inner">
+        <div class="blogs__header section-header">
           <h2 class="section-header__title">ブログ</h2>
           <p class="section-header__subtitle">blog</p>
         </div>
-        <div class="blog__lists">
+        <div class="blogs__lists">
 
           <?php $args = array(
             'posts_per_page' => 3, //表示する記事の数
@@ -166,7 +166,7 @@
             $customPosts = get_posts($args);
             if($customPosts) : foreach($customPosts as $post) : setup_postdata( $post );
           ?>
-          <a class="blog__item card" href="<?php the_permalink(); ?>">
+          <a class="blogs__item card" href="<?php the_permalink(); ?>">
             <figure class="card__figure js-card__figure">
               <?php the_post_thumbnail('post-thumbnail', array('alt' => the_title_attribute('echo=0'))); ?>
               <span class="card__category"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></span>
@@ -183,7 +183,7 @@
           <?php endif; wp_reset_postdata(); //クエリのリセット ?>
 
         </div>
-        <div class="blog__btn">
+        <div class="blogs__btn">
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>blog" class="link-btn">記事一覧を見る</a>
         </div>
       </div>

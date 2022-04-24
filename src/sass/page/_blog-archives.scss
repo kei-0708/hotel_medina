@@ -1,8 +1,11 @@
 @use "global" as *;
 
 .blog-archives{
-  margin-top: rem(80);
-  margin-bottom: rem(76);//仮
+  margin-top: rem(43);
+  margin-bottom: rem(76);
+  @include mq(){
+    margin-top: rem(38);
+  }
 }
 
 .blog-archives__lists{

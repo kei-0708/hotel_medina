@@ -1,39 +1,24 @@
 @use "global" as *;
 
-.blog{
+.blogs{
   margin-top: rem(40);
 }
 
-.blog__inner{
-
-}
-.blog__header{
-
-}
-.blog__lists{
+.blogs__lists{
   margin-top: rem(62);
   @include mq(){
     margin-top: rem(64);
   }
 }
 
-// .blog__item{
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   @include mq(){
-//     flex-direction: row;
-//   }
-// }
-
-.blog__item:nth-child(n+2){
+.blogs__item:nth-child(n+2){
   margin-top: rem(30);
   @include mq(){
     margin-top: rem(50);
   }
 }
 
-.blog__category{
+.blogs__category{
   display: inline-block;
   background-color: $dark-blue;
   color: $white;
@@ -48,7 +33,7 @@
   }
 }
 
-.blog__text{
+.blogs__text{
   display: inline-block;
   margin-top: rem(20);
   font-size: rem(16);
@@ -62,7 +47,7 @@
   }
 }
 
-.blog__btn{
+.blogs__btn{
   margin-top: rem(40);
   text-align: center;
   @include mq(){

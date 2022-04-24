@@ -2,7 +2,7 @@
 /*
 Template Name: お問い合わせ
 */
-get_header(); ?>
+get_header("sub"); ?>
 
   <main>
     <!-- トップ -->
@@ -21,7 +21,8 @@ get_header(); ?>
           <p class="section-header__subtitle">form</p>
         </div>
         <form action="">
-          <ul class="contact-form__lists">
+          <?php echo do_shortcode('[contact-form-7 id="41" title="お問い合わせフォーム"]'); ?>
+          <!-- <ul class="contact-form__lists">
             <li class="contact-form__item">
               <div class="contact-form__title">
                 <label for="name">氏名</label>
@@ -55,14 +56,14 @@ get_header(); ?>
           </ul>
           <p class="contact-form__privacy"><a href="#">プライバシーポリシー</a>に同意の上、送信ください。</p>
           <p class="contact-form__confirm">
-            <input type="checkbox" class="checkbox" id="check">
+            <input type="checkbox" class="contact-form__checkbox" id="check">
             <label for="check">プライバシーポリシーに同意する</label>
           </p>
           <div class="contact-form__btn-wrap">
             <div class="contact-form__btn link-btn">
               <input type="submit" value="送信する" class="contact-form__submit">
             </div>
-          </div>
+          </div> -->
         </form>
       </div>
     </div>

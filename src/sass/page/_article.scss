@@ -1,11 +1,8 @@
 @use "global" as *;
 
 .article{
-  margin-top: rem(94);
-  margin-bottom: rem(121);
-}
-
-.article__inner{
+  padding-top: rem(94);
+  padding-bottom: rem(121);
 }
 
 .article__wrap{
@@ -82,6 +79,16 @@
   position: relative;
 }
 
+.article__image img{
+  aspect-ratio: 314/210;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  @include mq(){
+    aspect-ratio: 826/551;
+  }
+}
+
 // カーテン
 .article__image:before{
   content: '';
@@ -132,6 +139,7 @@
   @include mq(){
     width: 30%;
     padding-left: rem(60);
+    padding-top: rem(156);
   }
 }
 

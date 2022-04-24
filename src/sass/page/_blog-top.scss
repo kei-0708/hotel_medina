@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .blog-top {
-  background-image: url(/images/blog/mv-sp.jpeg);
+  background-image: url(../images/blog/mv-sp.jpeg);
   @include mq() {
-    background-image: url(/images/blog/mv-pc.jpeg);
+    background-image: url(../images/blog/mv-pc.jpeg);
   }
 }

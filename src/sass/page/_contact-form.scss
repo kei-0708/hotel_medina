@@ -63,8 +63,8 @@
   text-align: center;
 }
 
-.contact-form__confirm .checkbox{
-  display: inline-block;
+.contact-form__checkbox{
+  display: inline-block !important;
   border: rem(2) solid $dark-blue;
   width: rem(20);
   height: rem(20);
@@ -73,17 +73,19 @@
   top: rem(5);
 }
 
-.contact-form__confirm .checkbox:checked::before{
+.contact-form__checkbox:checked::before{
   content: "✓";
   position: absolute;
   display: inline-block;
   top: -15px;
-    right: -7px;
-    font-size: 30px;
+  right: -7px;
+  font-size: 30px;
+  color: $dark-blue;
 }
 
 .contact-form__confirm label{
   margin-left: rem(10);
+  cursor: initial;
 }
 
 .contact-form__btn-wrap{

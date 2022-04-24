@@ -1,9 +1,21 @@
-<?php get_header(); ?>
+<?php get_header("sub"); ?>
 
   <main>
 
+
+
     <!-- 個別記事 -->
     <div class="article">
+      <!-- パンくずリスト -->
+      <div class="breadcrumb">
+        <div class="breadcrumb__inner inner">
+          <?php
+          if ( function_exists( 'bcn_display' ) ) {
+            bcn_display();
+          }
+          ?>
+        </div>
+      </div>
       <div class="article__inner inner">
         <div class="article__wrap">
 
@@ -26,14 +38,6 @@
               </figure>
               <?php the_content(); ?>
               <?php endwhile; endif; ?>
-              <!-- <h2 class="article__header1">見出し2（h2）</h2>
-              <p class="article__text1">テキストテキストテキストテキストテキ スト。テキストテキストテキストテキス ト。テキストテキストテキストテキスト テキストテキストテキストテキスト。 テキストテキストテキストテキストテキ ストテキストテキストテキストテキスト テキストテキストテキストテキストテキ スト</p>
-              <h2 class="article__header2">見出し3（h3）</h2>
-              <p class="article__text2">テキストテキストテキストテキストテキ スト。テキストテキストテキストテキス ト。テキストテキストテキストテキスト テキストテキストテキストテキスト。 テキストテキストテキストテキストテキ ストテキストテキストテキストテキスト テキストテキストテキストテキストテキ スト</p>
-              <h2 class="article__header2">見出し3（h3）</h2>
-              <p class="article__text2">テキストテキストテキストテキストテキ スト。テキストテキストテキストテキス ト。テキストテキストテキストテキスト テキストテキストテキストテキスト。 テキストテキストテキストテキストテキ ストテキストテキストテキストテキスト テキストテキストテキストテキストテキ スト</p>
-              <h2 class="article__header1">見出し2（h2）</h2>
-              <p class="article__text1">テキストテキストテキストテキストテキ スト。テキストテキストテキストテキス ト。テキストテキストテキストテキスト テキストテキストテキストテキスト。 テキストテキストテキストテキストテキ ストテキストテキストテキストテキスト テキストテキストテキストテキストテキ スト</p> -->
             </div>
 
 

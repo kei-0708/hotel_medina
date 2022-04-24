@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("sub"); ?>
 
   <main>
     <!-- トップ -->
@@ -11,11 +11,13 @@
 
     <!-- パンくずリスト -->
     <div class="breadcrumb">
-      <?php
+      <div class="breadcrumb__inner inner">
+        <?php
         if ( function_exists( 'bcn_display' ) ) {
           bcn_display();
         }
-      ?>
+        ?>
+      </div>
     </div>
 
 
@@ -29,7 +31,7 @@
         <div class="blog-archives__lists">
 
           <?php if(have_posts()): while(have_posts()): the_post(); ?>
-          <a class="blog__item card" href="<?php the_permalink(); ?>">
+          <a class="blog-archives__item card" href="<?php the_permalink(); ?>">
             <figure class="card__figure js-card__figure">
               <?php the_post_thumbnail('post-thumbnail', array('alt' => the_title_attribute('echo=0'))); ?>
               <span class="card__category"><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; } ?></span>

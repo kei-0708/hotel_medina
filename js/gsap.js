@@ -19,7 +19,7 @@ gsap.fromTo('.js-top__title1 > span', {
 	scale:1,
   rotateZ: '0',
 	stagger:0.1,
-  delay: 2.0
+  delay: 1.7
 });
 
 gsap.fromTo('.js-top__title2 > span', {
@@ -31,5 +31,5 @@ gsap.fromTo('.js-top__title2 > span', {
 	scale:1,
   rotateZ: '0',
 	stagger:0.2,
-  delay: 2.5
+  delay: 2.2
 });

@@ -1,13 +1,13 @@
 @use "global" as *;
 
 .top {
-  background-image: url(/images/common/top-mv_sp.jpg);
+  background-image: url(../images/common/top-mv_sp.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   position: relative;
   @include mq() {
-    background-image: url(/images/common/top-bg.jpg);
+    background-image: url(../images/common/top-bg.jpg);
   }
 }
 
