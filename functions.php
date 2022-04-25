@@ -41,3 +41,17 @@
   }
   add_filter('excerpt_length', 'my_excerpt_length');
 ?>
+
+<?php
+add_action( 'wp_footer', 'add_thanks' );
+function add_thanks() {
+?>
+  <script>
+  document.addEventListener( 'wpcf7mailsent', function( event ) {
+  location = 'http://hotel-medina-chaouen.local/thanks/'; //サンクスページURL
+  }, false );
+  </script>
+<?php
+}
+?>
+

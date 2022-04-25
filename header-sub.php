@@ -18,7 +18,7 @@
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
 
-  <?php wp_head(); ?>
+  <?php wp_head("sub"); ?>
 </head>
 <body <?php body_class(); ?>><?php wp_body_open(); ?>
 

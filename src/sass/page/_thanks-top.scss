@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.thanks-top {
+  background-image: url(../images/thanks/mv-sp.jpeg);
+  @include mq() {
+    background-image: url(../images/thanks/mv-pc.jpeg);
+  }
+}

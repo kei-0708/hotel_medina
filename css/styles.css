@@ -1997,8 +1997,6 @@ select::-ms-expand {
 .contact-form__confirm label {
   margin-left: 10px;
   margin-left: 0.625rem;
-  cursor: auto;
-  cursor: initial;
 }
 
 .contact-form__btn-wrap {
@@ -2024,5 +2022,43 @@ select::-ms-expand {
   .contact-top {
     background-image: url(../images/contact/mv-pc.jpeg);
   }
+}
+
+.thanks-top {
+  background-image: url(../images/thanks/mv-sp.jpeg);
+}
+@media screen and (min-width: 768px) {
+  .thanks-top {
+    background-image: url(../images/thanks/mv-pc.jpeg);
+  }
+}
+
+.thanks {
+  margin-top: 75px;
+  margin-top: 4.6875rem;
+  margin-bottom: 113px;
+  margin-bottom: 7.0625rem;
+}
+@media screen and (min-width: 768px) {
+  .thanks {
+    margin-top: 4.4375rem;
+  }
+}
+
+.thanks__text {
+  text-align: center;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .thanks__text {
+    font-size: 1.25rem;
+  }
+}
+
+.thanks__btn {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
